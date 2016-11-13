@@ -1,0 +1,657 @@
+$blue: #4EC5C1;
+$pink: #EC576B;
+$lime: #E5E33B;
+
+p, h1, h2, h3, h4, h5, h6, button, input, li, a {
+  font-family: 'Lato', sans-serif;
+  //font-family: 'Ubuntu', sans-serif;
+}
+.home {
+  width: 100vw;
+  padding-left: 0px;
+  padding-right: 0px;
+  #home-pink {
+    height: 400px;
+    background-color: $pink;
+  }
+  #home-blue {
+    height: 400px;
+    background-color: $blue;
+  }
+
+  #home-cover-div {
+    border: 25px solid #E5E33B;
+    height: 450px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -620px;
+    background-color: white;
+    #title-conatiner {
+      display: table;
+      margin: 0 auto;
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 11em;
+      }
+    }
+  }
+}
+  .about{
+    #about-heading{
+        text-align: center;
+        border-bottom: 1px solid $lime;
+        border-width: 5px;
+        width: 130px;
+        display: table;
+        margin: 30px auto 20px auto;
+        font-size: 40px;
+    }
+    .img-div{
+      .ang-img{
+        float: right;
+        height: 460px;
+        width: 290px;
+        margin-right: 80px;
+        background: linear-gradient(rgba(229, 227, 59, 0.35), rgba(229, 227, 59, 0.35)), url(../img/Angela_2.jpeg) no-repeat;
+        background-size: 100% 100%;
+        border: 10px solid $lime;
+      }
+    }
+
+    .about-text-div{
+      p{
+        font-size: 16px;
+      }
+      #about-text{
+        padding: 20px 20px 20px 20px;
+        &:before{
+          display: block;
+          content: "";
+          width: 70px;
+          height: 65px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          border-top: 6px solid $pink;
+          border-left: 6px solid $pink;
+        }
+        #about-inner{
+          &:after{
+            display: block;
+            content: "";
+            width: 70px;
+            height: 65px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            border-bottom: 6px solid $blue;
+            border-right: 6px solid $blue;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  .past-work{
+    background-color: $blue;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    #inner-work{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    h2{
+      text-align: center;
+      border-bottom: 1px solid $pink;
+      border-width: 5px;
+      width: 200px;
+      display: table;
+      margin: 30px auto 50px auto;
+      font-size: 40px;
+    }
+
+    #background-computer{
+      padding-left: 0px;
+      padding-right: 0px;
+      height: 600px;
+      margin-bottom: 30px;
+      width: 100%;
+      background: url("../img/MAC.png") no-repeat;
+      background-size: contain;
+      background-position: center;
+      .web-changer{
+        top: 20px;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow-y: scroll;
+        #mac-div{
+          margin-bottom: 50px;
+          height: 600px;
+          width: 695px;
+          z-index: 1000;
+
+
+          img{
+            width: 695px;
+            height: 400px;
+          }
+        }
+      }
+
+    }
+    #background-tablet{
+      padding-left: 0px;
+      padding-right: 0px;
+      height: 570px;
+      margin-bottom: 30px;
+      background: url(../img/ipad.png) no-repeat;
+      background-size: contain;
+      background-position: center;
+      .web-changer{
+        top: 67px;
+        position: relative;
+        width: 100%;
+        height: 452px;
+        overflow-y: scroll;
+        #tablet-div{
+          width: 479px;
+          img{
+            width: 343px;
+            height: 455px;
+          }
+        }
+      }
+
+    }
+    #background-phone{
+      padding-left: 0px;
+      padding-right: 0px;
+      height: 570px;
+      margin-bottom: 30px;
+      background: url(../img/iphone.png) no-repeat;
+      background-size: contain;
+      background-position: center;
+      .web-changer{
+        top: 80px;
+        position: relative;
+        width: 100%;
+        height: 392px;
+        overflow-y: scroll;
+        #phone-div{
+          width: 372px;
+          img{
+            width: 230px;
+            height: 455px;
+          }
+        }
+      }
+
+    }
+    ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* optional: just make scrollbar invisible */
+    }
+
+    #view-more-websites{
+      border: 3px solid $lime;
+      color: $lime;
+      width: 200px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 40px;
+      background-color: $blue;
+
+
+      &:hover{
+        background-color: $lime;
+        border: 3px solid $lime;
+        color: $blue;
+      }
+    }
+
+  }
+
+  .past-projects{
+    #past-projects-header{
+      margin-top: 50px;
+
+      h2{
+        text-align: center;
+        border-bottom: 1px solid $blue;
+        border-width: 5px;
+        width: 250px;
+        display: table;
+        margin: 30px auto 50px auto;
+        font-size: 40px;
+      }
+
+    }
+    .square-section{
+      height: 300px;
+      .title{
+        font-size: 30px;
+        margin-top: 20px;
+        color: black;
+        text-align: center;
+      }
+      .info{
+        text-align: justify;
+      }
+      .inner-boarder{
+        height: 270px;
+        margin-top: 13px;
+      }
+      .inner-boarder{
+        border: 14px solid white;
+      }
+      &#grow-drum{
+        background-color: $lime;
+      }
+      &#small-biz-support{
+        background-color: $blue;
+      }
+      &#smartify{
+        background-color: $pink;
+      }
+      &#sixth-scent-candles{
+        background-color: $blue;
+      }
+      &#color-that{
+        background-color: $pink;
+      }
+      &#class-connect{
+        background-color: $lime;
+      }
+    }
+  }
+
+
+.experience{
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+
+  p{
+    font-size: 15px;
+  }
+
+  .inner-experience{
+    padding-bottom: 5px;
+  }
+
+  #experience-heading{
+      text-align: center;
+      border-bottom: 1px solid $pink;
+      border-width: 5px;
+      width: 220px;
+      display: table;
+      margin: 30px auto 50px auto;
+      font-size: 40px;
+
+  }
+  #git-hub-button{
+    border: 3px solid $blue;
+    color: $blue;
+    width: 200px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 40px;
+    background-color: white;
+    float: right;
+
+    &:hover{
+      background-color: $pink;
+      border: 3px solid $pink;
+      color: white;
+    }
+  }
+  #resume-button{
+    border: 3px solid $lime;
+    color: $lime;
+    width: 200px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 40px;
+    background-color: white;
+    float: left;
+
+    &:hover{
+      background-color: $pink;
+      border: 3px solid $pink;
+      color: white;
+    }
+  }
+
+  #technical{
+    p{
+      text-align: left;
+    }
+    #technical-heading{
+      text-align: center;
+      border-bottom: 1px solid $lime;
+      border-width: 3px;
+      width: 100px;
+      display: table;
+      margin: 30px auto 50px auto;
+      font-size: 30px;
+    }
+
+    .border{
+      margin-bottom: 50px;
+      width: 600px;
+      border: 8px solid $lime;
+    }
+
+  }
+
+  #schooling{
+
+    p{
+      text-align: left;
+    }
+    #school-heading{
+      text-align: center;
+      border-bottom: 1px solid $blue;
+      border-width: 3px;
+      width: 100px;
+      display: table;
+      margin: 30px auto 50px auto;
+      font-size: 30px;
+    }
+
+    .border{
+      margin-top: 35px;
+      margin-bottom: 50px;
+      width: 600px;
+      border: 8px solid $blue;
+    }
+
+
+  }
+
+  #work{
+    p{
+      text-align: left;
+    }
+    #work-heading{
+      text-align: center;
+      border-bottom: 1px solid $pink;
+      border-width: 3px;
+      width: 100px;
+      display: table;
+      margin: 30px auto 50px auto;
+      font-size: 30px;
+    }
+
+    .border{
+      margin-bottom: 50px;
+      width: 600px;
+      border: 8px solid $pink;
+    }
+  }
+
+}
+
+.contact{
+  background-color: $blue;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  padding-right: 0px;
+  padding-left: 0px;
+
+  #contact-header{
+    h2{
+      text-align: center;
+      border-bottom: 1px solid $lime;
+      border-width: 5px;
+      width: 180px;
+      display: table;
+      margin: 30px auto 50px auto;
+      font-size: 40px;
+
+    }
+  }
+
+  #contact-form{
+    font-size: 16px;
+    padding: 0 50px;
+    #name{
+      border:6px solid $lime;
+      color: black;
+      margin-bottom: 15px;
+      line-height: 30px;
+
+      &:focus{
+        border: 6px solid $pink;
+      }
+    }
+    #email{
+      border:6px solid $lime;
+      color: black;
+      margin-bottom: 15px;
+      line-height: 30px;
+
+      &:focus{
+        border: 6px solid $pink
+      }
+    }
+    #number{
+      border:6px solid $lime;
+      color: black;
+      margin-bottom: 15px;
+      line-height: 30px;
+
+      &:focus{
+        border: 6px solid $pink;
+      }
+    }
+    #message{
+      border:6px solid $lime;
+      color: black;
+      margin-bottom: 10px;
+      resize: none;
+      height: 70px;
+
+      &:focus{
+        border: 6px solid $pink;
+      }
+    }
+
+    #submit-button{
+      border: 3px solid $lime;
+      color: black;
+      width: 300px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 40px;
+      background-color: $lime;
+
+      &:hover{
+        background-color: $pink;
+        border: 3px solid $pink;
+        color: black;
+      }
+    }
+  }
+
+  input, textarea{
+    outline: none;
+    &::-webkit-input-placeholder {
+      color: black;
+    }
+    &::-moz-placeholder {
+      color: black;
+    }
+    &:-ms-input-placeholder {
+      color: black;
+    }
+    &:-moz-placeholder {
+      color: black;
+    }
+
+  }
+
+  .font-awesome-icon{
+    margin-right: 5px;
+    color: $lime;
+    font-size: 25px;
+
+    &:hover{
+      color: $pink;
+    }
+  }
+
+  .inner-contact{
+    background: white;
+    border: 10px solid $lime;
+    padding: 10px 10px 10px 10px;
+
+    .contact-info{
+      p{
+        text-align: left;
+        font-size: 18px;
+      }
+    }
+
+    &:hover{
+      border: 10px solid $pink;
+    }
+  }
+
+  #arrow-up{
+    font-size: 80px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  #success{
+    display: none;
+  }
+
+}
+
+@media (max-width:1220px){
+  .experience{
+    #work, #schooling, #technical{
+      .border{
+        width: 100%;
+      }
+    }
+  }
+  .past-projects{
+    .square-section{
+      height: 350px;
+
+      .inner-boarder{
+        height: 330px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact{
+    #contact-info-div{
+      padding: 0 0 0 0;
+      margin-bottom:30px;
+    }
+    #contact-form{
+      padding: 0 0 0 0;
+    }
+  }
+  .experience{
+    #work, #schooling, #technical{
+      p{
+        text-align: center;
+      }
+    }
+  }
+  .past-projects {
+    .square-section {
+      height: 250px;
+
+      .inner-boarder{
+        height: 220px;
+      }
+    }
+  }
+
+  .home {
+    #home-cover-div{
+      border: 25px solid #E5E33B;
+      height: 400px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: -620px;
+      background-color: white;
+
+      #title-conatiner {
+        h1 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 9em;
+        }
+      }
+    }
+  }
+
+  .experience{
+    #schooling {
+      .border {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .past-projects{
+    .square-section {
+      height: 340px;
+      .inner-boarder{
+        height: 312px;
+      }
+    }
+  }
+  .home{
+    #home-blue, #home-pink{
+      height: 250px;
+    }
+    #home-cover-div{
+      border: 25px solid #E5E33B;
+      height: 281px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: -383px;
+      background-color: white;
+      #title-conatiner{
+        h1{
+          font-size: 5em;
+        }
+      }
+    }
+  }
+  .experience {
+    #resume-button, #git-hub-button{
+      width: 100%;
+      float: none;
+      margin-bottom: 20px;
+    }
+  }
+
+  .past-work{
+    #view-more-websites{
+      width: 300px !important;
+    }
+  }
+}
