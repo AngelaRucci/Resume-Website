@@ -56,6 +56,10 @@ $contactForm.submit(function(e) {
         data: $(this).serialize(),
         dataType: 'json',
         success: function(data) {
+            $("input[name=name]").val("");
+            $("input[name=email]").val("");
+            $("input[name=number]").val("");
+            $("#message").val("");
             $("#success").show().delay(5000).fadeOut();
         }
     });

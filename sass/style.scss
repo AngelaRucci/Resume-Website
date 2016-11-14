@@ -50,8 +50,8 @@ p, h1, h2, h3, h4, h5, h6, button, input, li, a {
     .img-div{
       .ang-img{
         float: right;
-        height: 460px;
-        width: 290px;
+        height: 458px;
+        width: 300px;
         margin-right: 80px;
         background: linear-gradient(rgba(229, 227, 59, 0.35), rgba(229, 227, 59, 0.35)), url(../img/Angela_2.jpeg) no-repeat;
         background-size: 100% 100%;
@@ -112,8 +112,12 @@ p, h1, h2, h3, h4, h5, h6, button, input, li, a {
       border-width: 5px;
       width: 200px;
       display: table;
-      margin: 30px auto 50px auto;
+      margin: 30px auto 10px auto;
       font-size: 40px;
+    }
+    #scroll-message{
+      margin-bottom: 20px;
+      font-size: 25px;
     }
 
     #background-computer{
@@ -606,9 +610,32 @@ p, h1, h2, h3, h4, h5, h6, button, input, li, a {
   }
 
   .experience{
+    padding-left: 0px;
+    padding-right: 0px;
     #schooling {
       .border {
         margin-top: 0px;
+      }
+    }
+    #schooling, #work, #technical{
+      padding-left: 0px;
+      padding-right: 0px;
+      .inner-experience{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .category{
+        text-align: center;
+      }
+      .content{
+        text-align: left;
+        margin-left: 20px;
+      }
+    }
+    #work{
+      .content{
+        text-align: justify !Important;
+        margin-left: 0px !important;
       }
     }
   }
@@ -652,6 +679,10 @@ p, h1, h2, h3, h4, h5, h6, button, input, li, a {
   .past-work{
     #view-more-websites{
       width: 300px !important;
+    }
+    #scroll-message{
+      margin-bottom: 20px;
+      font-size: 20px;
     }
   }
 }

@@ -36,8 +36,8 @@ p, h1, h2, h3, h4, h5, h6, button, input, li, a {
   font-size: 40px; }
 .about .img-div .ang-img {
   float: right;
-  height: 460px;
-  width: 290px;
+  height: 458px;
+  width: 300px;
   margin-right: 80px;
   background: linear-gradient(rgba(229, 227, 59, 0.35), rgba(229, 227, 59, 0.35)), url(../img/Angela_2.jpeg) no-repeat;
   background-size: 100% 100%;
@@ -83,8 +83,11 @@ p, h1, h2, h3, h4, h5, h6, button, input, li, a {
     border-width: 5px;
     width: 200px;
     display: table;
-    margin: 30px auto 50px auto;
+    margin: 30px auto 10px auto;
     font-size: 40px; }
+  .past-work #scroll-message {
+    margin-bottom: 20px;
+    font-size: 25px; }
   .past-work #background-computer {
     padding-left: 0px;
     padding-right: 0px;
@@ -413,8 +416,25 @@ p, h1, h2, h3, h4, h5, h6, button, input, li, a {
       font-weight: bold;
       font-size: 9em; }
 
-  .experience #schooling .border {
-    margin-top: 0px; } }
+  .experience {
+    padding-left: 0px;
+    padding-right: 0px; }
+    .experience #schooling .border {
+      margin-top: 0px; }
+    .experience #schooling, .experience #work, .experience #technical {
+      padding-left: 0px;
+      padding-right: 0px; }
+      .experience #schooling .inner-experience, .experience #work .inner-experience, .experience #technical .inner-experience {
+        padding-left: 0px;
+        padding-right: 0px; }
+      .experience #schooling .category, .experience #work .category, .experience #technical .category {
+        text-align: center; }
+      .experience #schooling .content, .experience #work .content, .experience #technical .content {
+        text-align: left;
+        margin-left: 20px; }
+    .experience #work .content {
+      text-align: justify !Important;
+      margin-left: 0px !important; } }
 @media (max-width: 767px) {
   .past-projects .square-section {
     height: 340px; }
@@ -439,6 +459,9 @@ p, h1, h2, h3, h4, h5, h6, button, input, li, a {
     margin-bottom: 20px; }
 
   .past-work #view-more-websites {
-    width: 300px !important; } }
+    width: 300px !important; }
+  .past-work #scroll-message {
+    margin-bottom: 20px;
+    font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
